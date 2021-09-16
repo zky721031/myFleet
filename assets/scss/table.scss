@@ -1,0 +1,20 @@
+table {
+  font-size: 14px;
+  // border: 1px solid rgb(209, 214, 218);
+  white-space: nowrap;
+
+  thead th:nth-child(1),
+  tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 99999;
+  }
+
+  tbody tr:nth-child(odd) th {
+    background-color: rgb(241, 241, 241);
+  }
+
+  tbody tr:nth-child(even) th {
+    background-color: #fff;
+  }
+}

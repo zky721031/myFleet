@@ -1,0 +1,76 @@
+.login {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left_side,
+.right_side {
+  width: 100%;
+  height: 100vh;
+}
+
+.left_side {
+  position: relative;
+  background-image: url(~assets/imgs/bannerBG.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+
+  .description {
+    width: 450px;
+    @include CENTER;
+  }
+}
+
+.right_side {
+  position: relative;
+
+  p.statement {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .login_area {
+    width: 350px;
+    @include CENTER;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // transform: translate(-50%, -50%);
+
+    .logo {
+      width: 80%;
+    }
+
+    h4 {
+      color: $compColor;
+    }
+
+    .omni_btn {
+      width: 100%;
+      background-color: $compColor;
+      border: 1px solid $compColor;
+      color: #fff;
+      padding: 5px 0;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: #fff;
+        border: 1px solid $compColor;
+        color: $compColor;
+      }
+    }
+
+    .other_login,
+    .forget_password {
+      color: $compColor;
+      font-size: 0.8rem;
+    }
+
+  }
+}

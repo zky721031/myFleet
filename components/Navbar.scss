@@ -1,0 +1,47 @@
+.nav_border {
+  border-top: 5px solid $compColor;
+  width: 100%;
+  overflow: hidden;
+
+  .menu {
+    img.omni_logo {
+      width: 150px;
+    }
+
+    ul {
+      li {
+        a {
+          color: $black-title;
+          text-decoration: none;
+          transition: all 0.4s;
+
+          &:hover {
+            color: $compColor;
+            text-decoration: none;
+          }
+
+          &.atv {
+            color: $compColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bell {
+  color: orange;
+}
+
+.new_msg {
+  background-color: orange;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 10px;
+  float: right;
+}
